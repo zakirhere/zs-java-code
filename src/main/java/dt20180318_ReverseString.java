@@ -20,11 +20,11 @@ public class dt20180318_ReverseString {
     // Reverse the words
     private String reverseStringOnlyWords(String inputString) {
         String[] allWords = inputString.split(" ");
-        String res = "";
+        StringBuilder res = new StringBuilder();
         for (int i = allWords.length - 1; i >= 0; i--) {
-            res += allWords[i] + " ";
+            res.append(allWords[i]).append(" ");
         }
-        return res.trim();
+        return res.toString().trim();
     }
 
     // Reverse each characters in the word only

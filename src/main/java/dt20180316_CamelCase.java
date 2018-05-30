@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class dt20180316_CamelCase {
 
     @Test
-    public void testRomanToIntConversion() {
+    public void testCamelCaseIndex() {
         Assert.assertEquals(camelcase("myNameIsZakir"), 4);
         Assert.assertEquals(camelcase("m"), 1);
         Assert.assertEquals(camelcase("mAB"), 3);
